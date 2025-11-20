@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Praktikum Pertemuan 3</title>
+        <style>
+            .container {
+                margin-left: auto;
+                margin-right: auto;
+
+                max-width: 1400px;
+                padding-left: 20rem;
+                padding-right: 20rem;
+                box-sizing: border-box;
+                background: linear-gradient(to right, blue, cyan, grey);
+            }
+
+            .border {
+                border: 1px solid;
+            }
+
+            .border-black {
+                border-color: black;
+            }
+
+            .border-red {
+                border-color: red;
+            }
+
+            .border-blue {
+                border-color: blue;
+            }
+
+            .border-green {
+                border-color: green;
+            }
+
+            .rounted-1 {
+                border-radius: 4px;
+            }
+
+            .rounted-2 {
+                border-radius: 8px;
+            }
+
+            .rounted-3 {
+                border-radius: 1px;
+            }
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .column {
+                float: left;
+                box-sizing: border-box;
+            }
+
+            .w-1 {
+                width: 25%;
+            }
+
+            .w-2 {
+                width: 75%;
+            }
+
+            .h-full {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container border border-blue">
+            <div class="row border border-black">Header</div>
+            <div class="row border border-black">
+                <div class="column border border-red w-1">sidebar</div>
+                <div class="column border border-green w-2">
+                    <div>
+                    <label for="name">nama: </label>
+                    <input type="text" id="name" name="nama"/>
+                    </div>
+                <div>
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="password" />
+                </div>
+                </div>
+            </div>
+            <div class="row border border-black">footer</div>
+        </div>
+    </body>
+</html>
